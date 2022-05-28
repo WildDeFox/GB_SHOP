@@ -264,6 +264,8 @@ svg path {
     font-size: 19.96px;
     line-height: 24px;
     color: #FBFBFB;
+    padding-top: 28px;
+    padding-bottom: 16px;
 }
 
 .features-text {
@@ -272,4 +274,85 @@ svg path {
     line-height: 17px;
     text-align: center;
     color: #FBFBFB;
+}
+
+.subscribe {
+    background: url(images/sub-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.review-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 87px;
+    padding-bottom: 126px;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-top: 30px;
+}
+
+.form-subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222224;
+}
+
+.form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.subscribe-form-wrapper {
+    display: flex;
+}
+
+.subscribe-input {
+    padding: 17px 60px 16px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 25px 0 0 25px;
+}
+
+.subscribe-button {
+    padding: 17px 22px 16px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background-color: #E05C6E;
+    border: none;
+    border-radius: 0 25px 25px 0;
 }
