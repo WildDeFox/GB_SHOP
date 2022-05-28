@@ -28,7 +28,10 @@ body {
 .navbar-link {
     margin-right: 33px;
     position: relative;
+    color: inherit;
 }
+
+
 
 .navbar-link:last-child {
     margin-right: 0;
@@ -48,15 +51,77 @@ svg path {
     fill: #F16D7F;
 }
 
+
+
 .badge {
     position: absolute;
-    top: -25px;
-    right: -10px;
+    top: -13px;
+    right: -12px;
     padding: 4px 8px;
     border-radius: 50%;
     background: #F16D7F;
     color: white;
     font-size: 12px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-button {
+    position: relative;
+}
+
+.mega-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 37px 34px;
+    width: 232px;
+    display: none;
+    flex-direction: column;
+}
+
+.wrapper-button:hover .mega-box {
+    display: flex;
+    
+}
+
+.mega-box-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.mega-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.mega-link {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding-bottom: 11px;
+    padding-left: 11px;
 }
 
 .banner {
@@ -176,3 +241,5 @@ svg path {
     text-transform: uppercase;
     z-index: 3;
 }
+
+
