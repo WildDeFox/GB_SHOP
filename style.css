@@ -126,6 +126,10 @@ svg path {
     padding-left: 11px;
 }
 
+.mega-link:hover {
+    color: #F16D7F;
+}
+
 .banner {
     height: 764px;
     background-color: #F1E4E6;
@@ -243,6 +247,133 @@ svg path {
     text-transform: uppercase;
     z-index: 3;
 }
+
+.product {
+    padding-bottom: 95px;
+}
+
+.product-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.product-text {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.item {
+    width: 360px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    text-decoration: none;
+}
+
+.item:hover .product-item-img {
+    filter: brightness(30%);
+}
+
+.product-item-btn-wprapper {
+    display: none;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.product-item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    padding: 10px 13px;
+    text-decoration: none;
+    pointer-events: auto;
+}
+
+.product-item-btn-txt {
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 11px;
+}
+
+.product-description {
+    padding: 23px 18px;
+    background: #F8F8F8;
+}
+
+.product-item-title {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.product-item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+
+.product-item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+.item:hover .product-item-btn-wprapper {
+    display: flex;
+}
+
+.product-item-btn:hover {
+    box-shadow: 0 0 10px 0 #fff;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.pink-btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 14px 38px;
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+    
+}
+
+
+
+
 
 .features {
     background-color: #222224;
