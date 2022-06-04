@@ -657,3 +657,49 @@ svg path {
     margin-bottom: 16px;
 }
 
+.prod-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    
+}
+
+.breadcrumb-link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    color: #F16D7F;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.breadcrumb-item::after {
+    content: "/";
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    margin: 0 4px;
+}
+
+.breadcrumb-item:last-child:after {
+    content: "";
+    margin: 0;
+}
+
+
+
+
+
+
