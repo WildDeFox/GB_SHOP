@@ -10,12 +10,14 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .header {
     width: 100%;
     height: 75px;
     background-color: #222222;
+    
 }
 
 .navbar {
@@ -28,7 +30,10 @@ body {
 .navbar-link {
     margin-right: 33px;
     position: relative;
+    color: inherit;
 }
+
+
 
 .navbar-link:last-child {
     margin-right: 0;
@@ -48,15 +53,77 @@ svg path {
     fill: #F16D7F;
 }
 
+
+
 .badge {
     position: absolute;
-    top: -25px;
-    right: -10px;
+    top: -13px;
+    right: -12px;
     padding: 4px 8px;
     border-radius: 50%;
     background: #F16D7F;
     color: white;
     font-size: 12px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-button {
+    position: relative;
+}
+
+.mega-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 37px 34px;
+    width: 232px;
+    display: none;
+    flex-direction: column;
+}
+
+.wrapper-button:hover .mega-box {
+    display: flex;
+    
+}
+
+.mega-box-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.mega-heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+.mega-link {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    text-decoration: none;
+    padding-bottom: 11px;
+    padding-left: 11px;
 }
 
 .banner {
@@ -176,3 +243,170 @@ svg path {
     text-transform: uppercase;
     z-index: 3;
 }
+
+.features {
+    background-color: #222224;
+    padding: 104px 0px;
+}
+
+.features-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-heading {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+
+.features-text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscribe {
+    background: url(images/sub-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.review-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 87px;
+    padding-bottom: 126px;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding-top: 30px;
+}
+
+.form-subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222224;
+}
+
+.form-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.subscribe-form-wrapper {
+    display: flex;
+}
+
+.subscribe-input {
+    padding: 17px 60px 16px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    background-color: #E1E1E1;
+    border: none;
+    border-radius: 25px 0 0 25px;
+}
+
+.subscribe-button {
+    padding: 17px 22px 16px 22px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background-color: #E05C6E;
+    border: none;
+    border-radius: 0 25px 25px 0;
+}
+
+.footer {
+    background-color: #222224;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copirate-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding: 30px 0 30px 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon, .social-btn {
+    transition: all .8s ease;
+}
+
+.social-btn {
+    background-color: inherit;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #fff;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
+}
+
+.social-btn:hover {
+    background: #F16D7F;
+    cursor: pointer;
+}
+
+.social-btn:hover .social-icon {
+    fill: #fff;
+}
+
+
