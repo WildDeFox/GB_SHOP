@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #222222;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-link {
+  margin-right: 33px;
+  position: relative;
+  color: inherit;
+}
+
+.navbar-link:last-child {
+  margin-right: 0;
+}
+
+.nav-icon {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.nav-icon:hover {
+  fill: #F16D7F;
+}
+
+.badge {
+  position: absolute;
+  top: -13px;
+  right: -12px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  background: #F16D7F;
+  color: white;
+  font-size: 12px;
+}
+
+.navbar-left, .navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-button {
+  position: relative;
+}
+
+.wrapper-button:hover .mega-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mega-box {
+  position: absolute;
+  background-color: #fff;
+  padding: 37px 34px;
+  width: 232px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 3;
+}
+
+.mega-box-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #222224;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+}
+
+.mega-heading {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.mega-link {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding-bottom: 11px;
+  padding-left: 11px;
+}
+
+.mega-link:hover {
+  color: #F16D7F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+/*# sourceMappingURL=main.css.map */
