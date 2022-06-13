@@ -1,0 +1,57 @@
+.subscribe 
+    background: url(../images/sub-bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+.review-wrap 
+    display: flex
+    justify-content: space-between
+    padding-top: 87px
+    padding-bottom: 126px
+    align-items: center
+
+.review 
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 360px
+
+.review-text 
+    @include txt(400, 20px, 24px, $black, none)
+    text-align: center
+    padding-top: 30px
+
+.form-subscribe-container 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.form-title 
+    @include txt(700, 24px, 40px, $black, uppercase)
+    text-align: center
+
+.form-text
+    @include txt(400, 18px, 30px, $black, uppercase)
+    text-align: center
+    padding-bottom: 32px
+
+.subscribe-form-wrapper
+    display: flex
+
+.subscribe-input 
+    padding: 17px 60px 16px 22px
+    line-height: 17px
+    color: $black
+    opacity: 0.67
+    background-color: #E1E1E1
+    border: none
+    border-radius: 25px 0 0 25px
+
+.subscribe-button 
+    padding: 17px 22px 16px 22px
+    line-height: 17px
+    color: #fff
+    background-color: #E05C6E
+    border: none
+    border-radius: 0 25px 25px 0

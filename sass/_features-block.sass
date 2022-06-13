@@ -1,0 +1,25 @@
+.features 
+    background-color: $black
+    padding: 104px 0px
+
+.features-wrapper 
+    display: flex
+    justify-content: space-between
+
+.features-item 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-right: 30px
+    &:last-of-type
+        margin-right: 0
+
+.features-heading 
+    @include txt(400, 20px, 24px, #FBFBFB, none)
+    padding-top: 28px
+    padding-bottom: 16px
+    
+.features-text
+    @include txt(300, 14px, 17px, #FBFBFB, none)
+    text-align: center

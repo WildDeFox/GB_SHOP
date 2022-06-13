@@ -1,0 +1,35 @@
+.footer 
+    background-color: $black
+
+.footer-wrapper 
+    display: flex
+    justify-content: space-between
+
+.copirate-text 
+    @include txt(400, 16px, 19px, #FBFBFB, none)
+    padding: 30px 0 30px 0
+
+.social 
+    display: flex
+    align-items: center
+
+.social-icon, .social-btn 
+    transition: all .8s ease
+
+.social-btn 
+    background-color: inherit
+    width: 32px
+    height: 32px
+    border: none
+    background: #fff
+    margin-right: 7px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:last-child
+        margin-right: 0
+    &:hover
+        background: $pink
+        cursor: pointer
+    &:hover .social-icon
+        fill: #fff

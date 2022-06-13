@@ -1,0 +1,60 @@
+.product-wrapper 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 48px
+
+.item 
+    width: 360px
+    position: relative
+    margin-bottom: 30px
+    &:hover .product-item-img
+        filter: brightness(30%)
+    &:hover .product-item-btn-wprapper
+        display: flex        
+
+.product-item 
+    display: flex
+    flex-direction: column
+    width: 360px
+    text-decoration: none
+
+.product-item-btn-wprapper 
+    display: none
+    position: absolute
+    top: 150px
+    width: 100%
+    justify-content: center
+    pointer-events: none
+
+.product-item-btn 
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #FFFFFF
+    text-decoration: none
+    padding: 10px 13px
+    text-decoration: none
+    pointer-events: auto
+    &:hover
+        box-shadow: 0 0 10px 0 #fff
+
+.product-item-btn-txt 
+    line-height: 17px
+    color: #FFFFFF
+    margin-left: 11px
+
+.product-description 
+    padding: 23px 18px
+    background: #F8F8F8
+
+.product-item-title
+    @include txt(400, 13px, 16px, #000, uppercase)
+    margin-bottom: 12px
+
+.product-item-text
+    @include txt(300, 14px, 17px, #5D5D5D, none)
+    margin-bottom: 18px
+
+.product-item-price 
+    @include txt(400, 16px, 19px, $pink, uppercase)

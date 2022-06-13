@@ -1,0 +1,110 @@
+.banner 
+    height: 764px
+    background-color: #F1E4E6
+
+.banner-wrapper 
+    display: flex
+    justify-content: space-evenly
+
+.banner-h1
+    @include txt(900, 48px, 58px, $black, uppercase)
+
+.banner-h3
+    @include txt(700, 32px, 44px, $black, uppercase)
+
+.brand-text
+    font-style: normal
+    color: $pink
+
+.banner-right 
+    width: 100%
+    display: flex
+    align-items: center
+    padding-left: 92px
+
+.banner-text 
+    border-left: 12px solid $pink
+    padding-left: 16px
+    align-self: center
+
+.main-range
+    padding-top: 65px
+    padding-bottom: 95px
+
+.main-range_top 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+.women
+    background-image: url(../images/for_women.png)
+
+.men
+    background-image: url(../images/for_men.png)
+
+.kids
+    background-image: url(../images/for_kids.png)
+
+.acess
+    background-image: url(../images/accesories.png)
+
+.main-range_item 
+    width: 360px
+    height: 260px
+    position: relative
+
+.main-range_item_bottom 
+    height: 180px
+    width: 100%
+    position: relative
+
+/* Затемнение для картинок */
+.main-range_item::after, .main-range_item_bottom::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color:  rgba(33, 22, 22, 0.7)
+
+.main-range-text-wrapper 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+
+.main-range_text
+    @include txt(400, 16px, 19px, white, uppercase)
+
+.main-range_text_bold
+    @include txt(700, 24px, 29px, $pink, uppercase)
+
+.main-range_text, .main-range_text_bold
+    z-index: 3
+
+.product 
+    padding-bottom: 95px
+
+.product-title
+    @include txt(400, 30px, 36px, #222222, capitalize)
+    text-align: center
+
+.product-text
+    @include txt(400, 14px, 17px, #222222, none)
+    display: block
+    text-align: center
+    
+.btn-center
+    display: flex
+    justify-content: center
+
+.pink-btn
+    display: inline-block
+    @include txt(400, 16px, 19px, #fff, none)
+    padding: 14px 38px
+    background: $pink
+    border: 1px solid #FF6A6A
+    text-decoration: none
+
