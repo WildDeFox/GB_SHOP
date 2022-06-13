@@ -1,0 +1,70 @@
+@import "breadcrumb"
+
+.registration
+    padding-bottom: 96px
+
+.reg-wrapper
+    padding-top: 64px
+    display: flex
+
+.registration-form
+    display: flex
+    flex-direction: column
+    padding-right: 120px
+
+.form-heading-4
+    @include txt(300, 16px, 19px, #222222, none)
+    margin-bottom: 20px
+
+.reg-input 
+    @include txt(400, 13px, 16px, #B1B1B1, none)
+    padding: 12px 0 15px 16px
+    border: 1px solid #A4A4A4
+    margin-bottom: 21px
+    &:last-of-type
+        margin-bottom: 15px
+
+.radio-wrap 
+    display: flex
+    padding-bottom: 33px
+
+.radio 
+    margin-right: 20px
+
+.radio-label 
+    @include txt(300, 11px, 13px, #000, none)
+    margin-left: 10px
+
+.reg-text 
+    @include txt(300, 13px, 16px, #B1B1B1, none)
+    margin-bottom: 39px
+
+.form-btn 
+    display: flex
+    align-self: flex-start 
+    justify-content: center
+    align-items: center
+    line-height: 17px
+    color: #FFFFFF
+    padding: 16px 29px
+    background: $pink
+    border: none
+    cursor: pointer
+
+.form-btn-image 
+    margin-left: 20px
+
+.reg-desc-heading 
+    text-transform: uppercase
+    margin-bottom: 22px
+
+.reg-desc-txt 
+    @include txt(300, 24px, 29px, #000, none)
+
+.reg-list 
+    list-style-image: url(../images/list-icon.png)
+    list-style-position: inside
+    margin-top: 21px
+
+.reg-list-item 
+    margin-bottom: 16px
