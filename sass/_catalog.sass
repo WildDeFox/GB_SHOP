@@ -1,0 +1,117 @@
+/* Аккардеон */
+.main-catalog 
+    position: relative
+    padding: 51px 0
+
+/* Чтобы акардеон не двигал контент снизу */
+.catalog-set-wrap 
+    display: flex
+    position: absolute
+    width: 100%
+    justify-content: flex-start
+    align-items: flex-start
+
+.catalog-set-padding 
+    padding: 13px 16px
+
+/* Иконка для главного details */
+.catalog-set-main,
+.catalog-set-sub > summary 
+    display: block
+
+.catalog-set-main::-webkit-details-marker,
+.catalog-set-sub > summary::-webkit-details-marker 
+    display: none
+
+
+.catalog-set-main::after 
+    content: url(../images/details-icon.png)
+    margin-left: 11px
+
+/* Устанавливаем собственные иконки details */
+.details-icon >summary 
+    display: block
+
+
+.details-icon > summary::-webkit-details-marker 
+    display: none
+
+.details-icon > summary::after 
+    content: url(../images/arrow-down.png)
+    margin-left: 11px
+
+/* Стили для главных заголовков details */
+.details-style 
+    @include txt(600, 14px, 17px, #EF5B70, uppercase)
+    cursor: pointer
+
+
+.catalog-set[open]
+    box-sizing: border-box
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    background: #fff
+    z-index: 2
+    width: 360px
+
+.catalog-set-sub-title 
+    box-sizing: border-box
+    line-height: 17px
+    color: #EF5B70
+    padding: 11px
+    cursor: pointer
+    border-left: 5px solid #EF5B70
+    border-bottom: 1px solid #EBEBEB
+    margin-top: 17px
+    &:hover
+        border-top: 1px solid #EBEBEB
+        border-right: 1px solid #EBEBEB
+
+.sub-categor
+    padding: 24px 12px
+
+
+.sub-link 
+    padding: 5px 0
+    display: block
+    line-height: 17px
+    color: #6F6E6E
+    text-decoration: none
+    &:hover
+        color: #EF5B70
+
+.details-sub 
+    position: relative
+    background: #fff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 5px 10px
+    z-index: 3
+    margin-top: 5px
+
+.sub-txt
+    display: flex
+    align-items: center
+
+.sub-txt > input 
+    border: 1px solid #EBEBEB
+    margin-right: 9.5px
+
+.pagination
+    padding: 6px
+    border: 1px solid #EBEBEB
+    display: flex
+
+.pag-item 
+    @include txt(300, 16px, 19px, #EF5B70, none)
+    text-decoration: none
+    padding: 8px
+    &:hover
+        color: #000
+    &:last-of-type
+        margin-right: 0
+
+.active-item 
+    color: #222222
+
+
+.margin-top 
+    margin-top: 30px
