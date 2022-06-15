@@ -376,13 +376,17 @@
 }
 
 .subscribe-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 17px 22px 16px 22px;
   line-height: 17px;
   color: #fff;
   background-color: #E05C6E;
-  border: none;
+  border: 1px solid #F16D7F;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .footer {
@@ -640,6 +644,8 @@
   background: #F16D7F;
   border: 1px solid #FF6A6A;
   text-decoration: none;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .heading {
@@ -779,6 +785,8 @@
 }
 
 .form-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,8 +802,10 @@
   color: #FFFFFF;
   padding: 16px 29px;
   background: #F16D7F;
-  border: none;
+  border: 1px solid #F16D7F;
   cursor: pointer;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
 }
 
 .form-btn-image {
@@ -976,6 +986,13 @@
   -webkit-transform: rotate(45deg);
 }
 
+.light-btn-icon {
+  fill: #F16D7F;
+  margin-right: 10px;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
 .light-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -995,10 +1012,17 @@
   text-transform: none;
   text-decoration: none;
   margin-top: 48px;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
-.light-btn > img {
-  margin-right: 17px;
+.light-btn:hover {
+  color: #fff;
+  background-color: #F16D7F;
+}
+
+.light-btn:hover .light-btn-icon {
+  fill: #fff;
 }
 
 .margin-top-129 {
@@ -1253,5 +1277,10 @@ svg path {
   fill: inherit;
   stroke: inherit;
   stroke-width: inherit;
+}
+
+.btn-hover:hover {
+  background: #fff;
+  color: #F16D7F;
 }
 /*# sourceMappingURL=main.css.map */

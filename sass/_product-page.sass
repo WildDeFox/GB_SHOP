@@ -90,6 +90,11 @@
     transform: rotate(45deg)
     -webkit-transform: rotate(45deg)
 
+.light-btn-icon
+    fill: $pink
+    margin-right: 10px
+    transition: all .6s ease
+
 .light-btn 
     display: flex
     justify-content: center
@@ -99,9 +104,14 @@
     @include txt(400, 16px, 19px, #EF5B70, none)
     text-decoration: none
     margin-top: 48px
+    transition: all .6s ease
+    &:hover
+        color: #fff
+        background-color: $pink
 
-.light-btn > img 
-    margin-right: 17px
+.light-btn:hover .light-btn-icon
+    fill: #fff
+    
 
 
 .margin-top-129 
