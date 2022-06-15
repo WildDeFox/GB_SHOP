@@ -16,9 +16,13 @@ body
     font-size: 14px
 
 .container
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
     height: 100%
+
+.content
+    padding-left: 3%
+    padding-right: 3%
 
 svg path
     fill: inherit
@@ -30,3 +34,65 @@ svg path
     background: #fff
     color: $pink
     
+@media screen and (max-width: 768px)
+    .banner-h1
+        @include txt(900, 44px, 54px, $black, uppercase)
+    
+    .banner-h3
+        @include txt(700, 24px, 28px, $black, uppercase)
+    
+    .banner
+        max-height: 764px
+
+    .main-range-wrap
+        margin-right: 19px
+
+    .product-wrapper
+        justify-content: center
+
+    .features-wrapper
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .features-item
+        max-width: 360px
+        margin-right: 0
+        margin-bottom: 48px
+
+    .review-wrap
+        flex-direction: column
+
+    .review 
+        margin-bottom: 48px
+        
+
+@media screen and (max-width: 390px)
+    .profile
+        display: none
+    .card
+        display: none
+
+    .navbar-link:last-of-type
+        margin-right: 10px
+
+    .banner-img
+        display: none
+    .banner
+        min-height: 396px
+        display: flex
+        align-items: center
+    .main-range_top
+        display: flex
+        flex-direction: column
+    .main-range-wrap
+        margin-right: 0
+        margin-bottom: 32px
+    .main-range_item_bottom
+        height: 111px
+    .footer-wrapper
+        flex-direction: column-reverse
+        align-items: center
+        justify-content: center
+    .social
+        margin-top: 43px
