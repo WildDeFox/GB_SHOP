@@ -4,7 +4,7 @@
 @import "subscribe-block"
 @import "footer"
 .banner 
-    height: 764px
+    max-height: 764px
     background-color: #F1E4E6
 
 .banner-wrapper 
@@ -25,7 +25,10 @@
     width: 100%
     display: flex
     align-items: center
-    padding-left: 92px
+    justify-content: center
+    
+.banner-img
+    width: 100%
 
 .banner-text 
     border-left: 12px solid $pink
@@ -41,30 +44,26 @@
     justify-content: space-between
     margin-bottom: 30px
 
-.women
-    background-image: url(../images/for_women.png)
 
-.men
-    background-image: url(../images/for_men.png)
+// test
 
-.kids
-    background-image: url(../images/for_kids.png)
-
-.acess
-    background-image: url(../images/accesories.png)
-
-.main-range_item 
-    width: 360px
-    height: 260px
-    position: relative
-
-.main-range_item_bottom 
-    height: 180px
+.main-range-img
     width: 100%
+    height: 100%
+
+.main-range-wrap
+    margin-right: 30px
+    &:last-of-type
+        margin-right: 0
+
+.main-range-wrap, .main-range_item_bottom
     position: relative
 
-/* Затемнение для картинок */
-.main-range_item::after, .main-range_item_bottom::after
+.img-wrap
+    position: relative
+
+.img-wrap:after,
+.main-range_item_bottom:after
     content: ""
     position: absolute
     top: 0
@@ -73,12 +72,16 @@
     bottom: 0
     background-color:  rgba(33, 22, 22, 0.7)
 
-.main-range-text-wrapper 
+.main-range-tex
+    width: 100%
+    height: 100%
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
-    height: 100%
+    justify-content: center
+    position: absolute
+    top: 0
+
 
 .main-range_text
     @include txt(400, 16px, 19px, white, uppercase)

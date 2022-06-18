@@ -1,0 +1,122 @@
+.shopping-container
+    display: flex
+    justify-content: space-between
+    padding-top: 96px
+    padding-bottom: 128px
+
+.shopping-container-left
+    width: 65%
+    display: flex
+    flex-direction: column
+
+.shopping-container-right
+    padding-left: 128px 
+    width: 35%
+
+.shopping-card
+    display: flex
+    position: relative
+    margin-bottom: 40px
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+.shop-card-desc
+    padding: 22px 31px
+    &::after
+        content: url(../images/shop-esc.png)
+        position: absolute
+        top: 28px
+        right: 22px
+        cursor: pointer
+    
+.card-desc-heading
+    @include txt(400, 24px, 29px, #222222, uppercase)
+    margin-bottom: 42px
+    
+.shop-card-desc-list
+    list-style: none
+
+.shop-card-desc-item
+    @include txt(400, 22px, 26px, #575757, capitalize)
+
+.shop-card-desc-item-digital
+    border: 1px solid #EAEAEA
+    padding: 1px 15px
+
+.shop-form-title
+    @include txt(300, 16px, 19px, #222222, uppercase)
+    margin-bottom: 20px
+
+.shop-form-input
+    display: block
+    box-sizing: border-box
+    width: 100%
+    @include txt(300, 13px, 16px, #222222, capitalize)
+    padding: 16px 16px 16px 17px
+    border: 1px solid #A4A4A4
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+.shop-btn-container
+    display: flex
+    justify-content: space-between
+    margin-top: 69px
+
+.shop-btn
+    text-decoration: none
+    @include txt(300, 14px, 17px, #000, uppercase)
+    border: 1px solid #A4A4A4
+    padding: 16px 38px
+    transition: all .6s ease
+
+.shop-btn-smal
+    display: inline-block
+    text-decoration: none
+    @include txt(300, 11px, 13px, #4A4A4A, uppercase)
+    border: 1px solid #A4A4A4
+    padding: 9px 14px
+    margin-top: 24px
+    transition: all .6s ease
+
+.price-block
+    background: #F5F3F3
+    padding: 39px 34px 42px 44px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 58px
+
+.price-small
+    @include txt(400, 11px, 13px, #4A4A4A, uppercase)
+    margin-bottom: 12px
+
+.price-large
+    @include txt(300, 16px, 19px, #222222, uppercase)
+
+.price-padding
+    padding-left: 20px
+
+.hr-price
+    background: #E2E2E2
+    height: 1px
+    width: 100%
+    border: none
+    margin-top: 21px
+    margin-bottom: 17px
+
+.price-btn
+    text-decoration: none
+    @include txt(300, 16px, 19px, #fff, uppercase)
+    padding: 15px 38px
+    background-color: #F16D7F
+    text-align: center
+    transition: all .6s ease
+
+.btn-hover-pink:hover
+    background-color: #F16D7F
+    color: #fff
+
+.btn-hover-white:hover
+    color: #4A4A4A
+    background-color: white
+    border: 1px solid #A4A4A4
