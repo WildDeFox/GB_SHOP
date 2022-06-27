@@ -10,7 +10,7 @@
 .registration-form
     display: flex
     flex-direction: column
-    padding-right: 120px
+    padding-right: 7%
 
 .form-heading-4
     @include txt(300, 16px, 19px, #222222, none)
@@ -18,7 +18,7 @@
 
 .reg-input 
     @include txt(400, 13px, 16px, #B1B1B1, none)
-    padding: 12px 0 15px 16px
+    padding: 12px 16px 15px 16px
     border: 1px solid #A4A4A4
     margin-bottom: 21px
     &:last-of-type
@@ -70,3 +70,14 @@
 
 .reg-list-item 
     margin-bottom: 16px
+
+@media screen and (max-width: 768px)
+    .reg-desc-txt
+        font-size: 16px
+        line-height: 19px
+    
+@media screen and (max-width: 510px)
+    .reg-wrapper
+        flex-direction: column
+    .registration-form
+        margin-bottom: 40px

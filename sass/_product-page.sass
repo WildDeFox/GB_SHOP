@@ -3,7 +3,7 @@
 
 .carousel-control 
     position: absolute
-    top: 365px
+    top: 40%
     display: flex
     width: 100%
     justify-content: space-between
@@ -61,7 +61,7 @@
 
 .light-hr
     height: 2px
-    width: 641px
+    width: 80%
     background-color: #EAEAEA
     border: none
 
@@ -116,3 +116,20 @@
 
 .margin-top-129 
     margin-top: 129px
+
+@media screen and (max-width: 1114px)
+    .mobil-none
+        display: none
+
+@media screen and (max-width: 768px)
+    .prod-desc 
+        margin-top: 0
+    .prod-desc-wrap
+        border: 0
+        border-bottom: 1px solid #EAEAEA;
+    .light-hr
+        width: 100%
+    
+@media screen and (max-width: 390px)
+    .set-item
+        font-size: 10px

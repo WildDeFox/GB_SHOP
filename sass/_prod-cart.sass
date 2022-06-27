@@ -1,7 +1,8 @@
 .product-wrapper 
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))
+    grid-column-gap: 10px
+    justify-items: center
     margin-top: 48px
 
 .item 
